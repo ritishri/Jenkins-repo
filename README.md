@@ -1,7 +1,7 @@
 Spark Puppet Webapp Sample
 ==========================
 
-The king of hello worlds.
+Sample hello world webapp
 
 ```
 mvn clean package
