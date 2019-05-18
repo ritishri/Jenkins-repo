@@ -41,7 +41,8 @@ public class App
         System.out.println(requestInfoToString(request));
     });
 
-    get("/", (request,response) -> "Hello World!");
+    get("/", (request,response) -> "Hello!!! My version is 1.0 and I am built from Develop branch on port 9999!");
+    get("/test", (request,response) -> "Hello!!! My version is 1.0 and I am built from Develop branch on port 9999!");
 
   }
 
