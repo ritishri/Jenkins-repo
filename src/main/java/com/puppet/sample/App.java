@@ -32,7 +32,7 @@ public class App
     try {
       Spark.port(Integer.parseInt(System.getProperty("appPort")));
     } catch (Exception e) {
-      Spark.port(9999);
+      Spark.port(9997);
     }
 
     Spark.threadPool(10, 5, 600);
@@ -41,7 +41,7 @@ public class App
         System.out.println(requestInfoToString(request));
     });
 
-    get("/", (request,response) -> "Hello World!");
+    get("/", (request,response) -> "Hello!!! My version is 1.0 and I am built from Feature branch on port 9997!");
 
   }
 
