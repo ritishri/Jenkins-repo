@@ -37,12 +37,12 @@ public class TestRoutes
     public void testEnMsg() throws IOException {
         TestResponse res = request("GET", "/");
         assertEquals(200, res.status);
-        assertTrue(res.body.contains("Hello World!"));
+        assertTrue(res.body.contains("Hello!!! My version is 1.0 and I am built from Feature branch on port 9997!"));
 	}
 
     private TestResponse request(String method, String path) throws java.io.IOException {
 		try {
-			URL url = new URL("http://localhost:9999" + path);
+			URL url = new URL("http://localhost:9997" + path);
 			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 			connection.setRequestMethod(method);
 			connection.setDoOutput(true);
