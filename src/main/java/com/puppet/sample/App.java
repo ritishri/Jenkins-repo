@@ -42,8 +42,7 @@ public class App
     });
 
     get("/", (request,response) -> "Hello!!! My version is 1.0 and I am built from Develop branch on port 9999!");
-    get("/test", (request,response) -> "Hello!!! My version is 1.0 and I am built from Develop branch on port 9999!");
-
+    
   }
 
 }
