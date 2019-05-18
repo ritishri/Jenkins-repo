@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'Slave-01'
+        label 'master'
     }
     stages {
         stage('Build') {
