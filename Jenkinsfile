@@ -30,5 +30,10 @@ pipeline {
       }
     }
 
+    stage('Deployment') {
+        steps {
+            bat 'D:/Docs/DevOps/deployment.bat'
+        }
+    }
   }
 }
