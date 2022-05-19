@@ -32,7 +32,7 @@ pipeline {
 
     stage('Deployment') {
         steps {
-            echo "deployed"
+            bat 'D:/Docs/DevOps/deployment'
         }
     }
   }
