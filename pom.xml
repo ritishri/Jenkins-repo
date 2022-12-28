@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.puppet.sample</groupId>
   <artifactId>java-webapp</artifactId>
@@ -22,51 +21,51 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-        <groupId>com.sparkjava</groupId>
-        <artifactId>spark-core</artifactId>
-        <version>2.7.2</version>
+      <groupId>com.sparkjava</groupId>
+      <artifactId>spark-core</artifactId>
+      <version>2.7.2</version>
     </dependency>
     <dependency>
-        <groupId>com.sparkjava</groupId>
-        <artifactId>spark-template-freemarker</artifactId>
-        <version>2.5.5</version>
+      <groupId>com.sparkjava</groupId>
+      <artifactId>spark-template-freemarker</artifactId>
+      <version>2.5.5</version>
     </dependency>
     <dependency>
-       <groupId>org.slf4j</groupId>
-       <artifactId>slf4j-api</artifactId>
-       <version>1.7.5</version>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.5</version>
     </dependency>
     <dependency>
-       <groupId>org.slf4j</groupId>
-       <artifactId>slf4j-log4j12</artifactId>
-       <version>1.7.5</version>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>1.7.5</version>
     </dependency>
     <dependency>
-        <groupId>com.sparkjava</groupId>
-        <artifactId>spark-template-thymeleaf</artifactId>
-        <version>2.3</version>
+      <groupId>com.sparkjava</groupId>
+      <artifactId>spark-template-thymeleaf</artifactId>
+      <version>2.3</version>
     </dependency>
     <dependency>
-		  <groupId>org.sonarsource.scanner.maven</groupId>
-		  <artifactId>sonar-maven-plugin</artifactId>
-		  <version>3.2</version>
-	  </dependency>
+      <groupId>org.sonarsource.scanner.maven</groupId>
+      <artifactId>sonar-maven-plugin</artifactId>
+      <version>3.2</version>
+    </dependency>
   </dependencies>
 
   <build>
     <plugins>
       <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-jar-plugin</artifactId>
-          <version>3.0.2</version>
-          <configuration>
-              <archive>
-                  <manifest>
-                      <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                      <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-                  </manifest>
-              </archive>
-          </configuration>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.0.2</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+              <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+            </manifest>
+          </archive>
+        </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -90,5 +89,21 @@
       </plugin>
     </plugins>
   </build>
+
+  <repositories>
+    <repository>
+      <id>upes</id>
+      <name>Releases</name>
+      <url>http://localhost:8081/nexus/content/repositories/upes/</url>
+    </repository>
+  </repositories>
+  
+  <distributionManagement>
+    <repository>
+      <id>upes</id>
+      <name>Releases</name>
+      <url>http://localhost:8081/nexus/content/repositories/upes/</url>
+    </repository>
+  </distributionManagement>
 
 </project>
